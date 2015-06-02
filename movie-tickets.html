@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.timepicker.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+    	<div class="row clearfix">
+    		<div class="col-md-12 column">
+    			<div class="carousel slide" id="carousel-565797">
+    				<ol class="carousel-indicators">
+    					<li class="active" data-slide-to="0" data-target="#carousel-565797">
+    					</li>
+    					<li data-slide-to="1" data-target="#carousel-565797">
+    					</li>
+    					<li data-slide-to="2" data-target="#carousel-565797">
+    					</li>
+    				</ol>
+    				<div class="carousel-inner">
+    					<div class="item active">
+    						<img alt="" src="css/img/avengers.jpg" />
+    						<div class="carousel-caption">
+    							<h4>
+    								Avengers: Age of Ultron
+    							</h4>
+    							<p>
+                    When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's Mightiest Heroes to stop the villainous Ultron from enacting his terrible plans.
+    							</p>
+    						</div>
+    					</div>
+    					<div class="item">
+    						<img alt="" src="css/img/madmax.jpg" />
+    						<div class="carousel-caption">
+    							<h4>
+    								Mad Max: Fury Road
+    							</h4>
+    							<p>
+                    In a stark desert landscape where humanity is broken, two rebels just might be able to restore order: Max, a man of action and of few words, and Furiosa, a woman of action who is looking to make it back to her childhood homeland.
+    							</p>
+    						</div>
+    					</div>
+    					<div class="item">
+    						<img alt="" src="css/img/exmachina.jpg" />
+    						<div class="carousel-caption">
+    							<h4>
+    								Ex Machina
+    							</h4>
+    							<p>
+                    A young programmer is selected to participate in a breakthrough experiment in artificial intelligence by evaluating the human qualities of a breathtaking female A.I..
+    							</p>
+    						</div>
+    					</div>
+    				</div> <a class="left carousel-control" href="#carousel-565797" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-565797" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    			</div>
+    		</div>
+    	</div>
+      <br>
+      <br>
+      <div class="row clearfix">
+        <form id="ticket">
+      		<div class="col-md-4 column">
+            <select id="movie">
+              <option value="1" selected>Avengers: Age of Ultron</option>
+              <option value ="2">Mad Max: Fury Road</option>
+              <option value = "3">Ex Machina</option>
+            </select>
+      		</div>
+      		<div class="col-md-3 column">
+            <input id = "movieTime" type="text" class="timepicker" name="time" placeholder="Select Time">
+      		</div>
+      		<div class="col-md-3 column">
+            <select id = "age" name="age">
+              <option value ="1" selected>Regular</option>
+              <option value="2">Senior (60+)</option>
+            </select>
+      		</div>
+          <div class="col-md-2 column">
+            <button type="submit" class="btn ">Submit</button>
+          </div>
+        </form>
+    	</div>
+      <br>
+      <br>
+      <div class="row clearfix">
+          <div class="col-md-4 column">
+            <div id="show-price">
+              <h1><span class="lead ticket-price"></span></h1>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

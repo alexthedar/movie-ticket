@@ -1,12 +1,17 @@
-#show-contact {
+
+
+body {
+    background: black;
+    padding: 20px;
+}
+h1 {
+    font-weight: bold;
+}
+p {
+    margin: 10px 0;
+}
+
+#show-price {
   display: none;
-}
-
-.contact {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.contact:hover {
-  text-decoration: underline;
+  color: #FFF;
 }
